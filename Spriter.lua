@@ -156,7 +156,8 @@ function Spriter:timeline(name, framesPerSecond)
 
          color_transform(sprite.color, sprite.opacity/100, bitmap)
          bitmap:setScale(sprite.width/width * (-2*sprite.xflip + 1), sprite.height/height * (-2*sprite.yflip + 1))
-         bitmap:setPosition(sprite.x-left, sprite.y-top)
+         --bitmap:setPosition(sprite.x-left, sprite.y-top)
+         bitmap:setPosition(sprite.x, sprite.y)
          bitmap:setRotation(360-sprite.angle)
          parent:addChild(bitmap)
       end

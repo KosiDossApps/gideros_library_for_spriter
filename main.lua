@@ -9,7 +9,8 @@ spriter = Spriter.new("BetaFormatHero.SCML", "example_hero.txt", "example_hero.p
 
 a = spriter:movieClip("walk", true)
 stage:addChild(a)
+a:setPosition(150,200)
 
 b = spriter:movieClip("idle_healthy", true)
 stage:addChild(b)
-b:setPosition(0,250)
+b:setPosition(150,400)
